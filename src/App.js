@@ -8,11 +8,11 @@ function App() {
   return (
     <React.Fragment>
       <div className="App">
-      <header className="App-header">
-        <p>IAS Application</p>
-      </header>
-    </div>
-      <CompanyList data={CompanyData}/>
+        <header className="App-header">
+          <p>IAS Application</p>
+        </header>
+        <CompanyList data={CompanyData}/>
+      </div>    
     </React.Fragment>
   );
 }
