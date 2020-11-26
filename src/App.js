@@ -6,8 +6,8 @@ import {BrowserRouter as Router,Route,Switch,Redirect} from "react-router-dom";
 import Error from "./Components/Error/Error";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header"
-
-
+import Home from "./Components/Home/Home"
+import About from "./Components/Home/About"
 
 function App() {
 
@@ -16,17 +16,22 @@ function App() {
       <Router>
         <Switch>
           <Route path="/iasapplication/Application">
-              <Header backButton="/"/>    
+              <Header backButton="/iasapplication/Home"/>    
               <CompanyList data={CompanyData}/>
               <Footer/>
           </Route>
           <Route path="/iasapplication/Home">
-              <Header backButton="/"/>    
-              <CompanyList data={CompanyData}/>
+              <Header/>    
+              <Home/>
+              <Footer/>
+          </Route>
+          <Route path="/iasapplication/About">
+              <Header/>    
+              <About/>
               <Footer/>
           </Route>
           <Route path="/iasapplication/Error">
-            <Header backButton="/"/>
+            <Header backButton="/iasapplication/Home"/>
             <Error/>
             <Footer/>
           </Route>

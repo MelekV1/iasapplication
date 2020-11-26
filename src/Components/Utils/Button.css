@@ -1,4 +1,4 @@
-button{
+.buttonTheme{
   width:200px;
   height:70px;
   background: #2bc36b;
@@ -16,7 +16,7 @@ button{
   margin:5px;
   border-radius: 50px;
 }
-button:hover{
+.buttonTheme:hover{
   transition: all .5s;
   transform: rotate(-3deg) scale(1.1);
   box-shadow: 0px 3px 5px rgba(0,0,0,.4);

@@ -4,7 +4,7 @@ import "./Button.css"
 const Button=(props)=>{
     return(
         <React.Fragment>
-             <button>
+             <button className="buttonTheme">
                 <div>{props.text}</div>
             </button>
         </React.Fragment>
