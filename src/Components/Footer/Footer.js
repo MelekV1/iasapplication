@@ -12,16 +12,16 @@ function Footer(props) {
                 <p class="copyright-text">Copyright &copy; 2020 Powered by <b>IEEE IAS ENIT SBC</b></p>
             </div>
             <div class="field">
-                <a class="sns-btn sns-btn--linked">
+                <a href="https://www.linkedin.com/company/ieee-enit-ias-student-branch-chapter" target="_blank" rel="noreferrer" className="sns-btn sns-btn--linked">
                     <LinkedInIcon style={{ color:"white"}}/>
                 </a>	
-                <a className="sns-btn sns-btn--facebook">
+                <a href="https://www.facebook.com/IAS.ENIT" target="_blank" rel="noreferrer" className="sns-btn sns-btn--facebook">
                     <FacebookIcon style={{ color:"white"}}/>
                 </a>
-                <a class="sns-btn sns-btn--instagram">
+                <a  href="https://www.instagram.com/ieee.ias.enit.sbc/" target="_blank" rel="noreferrer" className="sns-btn sns-btn--instagram">
                     <InstagramIcon style={{ color:"white"}}/>
                 </a>
-                <a class="sns-btn sns-btn--siteweb">
+                <a href="https://ias-enit.ieee.tn/" target="_blank" rel="noreferrer" className="sns-btn sns-btn--siteweb">
                     <LanguageIcon style={{ color:"white"}}/>
                 </a>
             </div>

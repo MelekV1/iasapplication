@@ -1,9 +1,12 @@
 import React from 'react';
 import "./home.css";
+
+
 const About = () => {
     return (
        <React.Fragment>
         <div class="wrapper">
+
             <div class="product-img">
                 <img src="https://www.jotform.com/blog/wp-content/uploads/2020/06/7-Best-work-from-home-software-700x545.png" height="320" width="320" alt="Searching for internship"/>
             </div>
@@ -13,7 +16,7 @@ const About = () => {
                     <h2>by IEEE IAS ENIT SBC</h2>
                     <p>Looking for an internship ?
                     <br/>Gain work experience
-                    <br/> <b>&</b> 
+                    <br/> <b>&</b>
                     <br/>kickstart your career.
                     <br/><strong>Find the right internship for you !</strong></p>
                 </div>
@@ -21,6 +24,7 @@ const About = () => {
                     <button >Know us !</button>
                 </div>
             </div>
+
         </div>
        </React.Fragment>
     );

@@ -9,6 +9,7 @@ import Header from "./Components/Header/Header"
 import Home from "./Components/Home/Home"
 import About from "./Components/Home/About"
 
+import ParticlesBg from 'particles-bg'
 function App() {
 
   return (
@@ -16,17 +17,17 @@ function App() {
       <Router>
         <Switch>
           <Route path="/iasapplication/Application">
-              <Header backButton="/iasapplication/Home"/>    
+              <Header backButton="/iasapplication/Home"/>
               <CompanyList data={CompanyData}/>
               <Footer/>
           </Route>
           <Route path="/iasapplication/Home">
-              <Header/>    
+              <Header/>
               <Home/>
               <Footer/>
           </Route>
           <Route path="/iasapplication/About">
-              <Header/>    
+              <Header/>
               <About/>
               <Footer/>
           </Route>
@@ -37,7 +38,9 @@ function App() {
           </Route>
           <Redirect to="/iasapplication/Error"/>
         </Switch>
-      </Router>  
+      </Router>
+      <ParticlesBg color="#259e57" num={200} type="cobweb" bg={true} />
+
     </React.Fragment>
   );
 }
