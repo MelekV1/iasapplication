@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import './App.css';
 import CompanyList from './Components/CompaniesComps/CompaniesList'
 import CompanyData from './Components/CompaniesComps/CompaniesData';
@@ -8,9 +8,14 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header"
 import Home from "./Components/Home/Home"
 import About from "./Components/Home/About"
-
+import SearchBox from "./Components/Utils/SearchBox"
+import DropSelect from "./Components/Utils/DopSelect"
 import ParticlesBg from 'particles-bg'
+
 function App() {
+  const [companyName,setCompanyName]=useState('');
+  const [Companies,setCompanies]=useState(CompanyData);
+  const [field, setField] = React.useState('');
 
   return (
     <React.Fragment>
@@ -18,7 +23,12 @@ function App() {
         <Switch>
           <Route path="/iasapplication/Application">
               <Header backButton="/iasapplication/Home"/>
-              <CompanyList data={CompanyData}/>
+              <SearchBox 
+                setCompanyName={setCompanyName}/>
+              
+              <CompanyList 
+                companyNamekey={companyName}
+                data={Companies}/>
               <Footer/>
           </Route>
           <Route path="/iasapplication/Home">
